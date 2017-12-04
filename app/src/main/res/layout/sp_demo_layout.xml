@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:onClick="logOut"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="控制"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SP状态："
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/sp_status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="spOpen"
+            android:text="打开"
+            android:background="@drawable/btn_commit"
+            android:textColor="@color/colorYellow"
+            android:textSize="19sp" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="spClose"
+            android:text="关闭"
+            android:background="@drawable/btn_commit"
+            android:textColor="@color/colorYellow"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="spTaskSet"
+        android:text="任务设置"
+        android:background="@drawable/btn_commit"
+        android:textColor="@color/colorYellow"
+        android:textSize="19sp" />
+
+
+</LinearLayout>

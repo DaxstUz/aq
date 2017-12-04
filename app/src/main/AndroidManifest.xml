@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aqsystem.aqsystem">
+
+    !-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+
+    <!--如果店铺开启到店自提选项, 为了更好的体验需要获取地理信息的权限. (非必须项)-->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 连接互联网Internet权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".BLApplcation"
+        android:allowBackup="true"
+        android:icon="@mipmap/aqlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="LET_LICENSE"
+            android:value="X8AiQO37OvYHfANC3rSdsCquSrR/PPY/j+hggyX+zLyt5I8wAccTShpcAbScbPIwKSlRWAAAAADfNvFM25sjTr4k9TpzVpzQt7zl+ck3jUsVuRHDtYSIWl+MAW7LsdCD/DIgFvyf3SzDIUwuQtdmyEPrOqqAhLQKr3/aSQ7wIhax+3UvBQLxEwAAAAA=" />
+
+        <meta-data
+            android:name="LET_CHANNEL"
+            android:value="cn.com.broadlink.xxx" />
+
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.aqsystem.aqsystem.syncregister.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <!--android:launchMode="singleTask"-->
+        <activity
+            android:name=".activity.DevListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterByPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DevMoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RMDemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SPDemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DevConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebNewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FindPsdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PermissionsActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".service.NetReceiver"/>
+        <service android:name=".service.NetStateChangeService" />
+
+        <meta-data android:value="589c1d4ea3251105ce000dcf" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="anqun" android:name="UMENG_CHANNEL"/>
+
+        <!-- AppID, 使用有赞原生接入时必须填写 -->
+        <meta-data
+            android:name="YZ_APP_ID"
+            android:value="c3999e8e13bd1110f0"/>
+
+        <!-- AppSecret, 使用有赞原生接入时必须填写 -->
+        <meta-data
+            android:name="YZ_APP_SECRET"
+            android:value="88465d47aea655977dd885a35bd2c3c0"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:onClick="logOut"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="更多操作"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_lua_version"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:onClick="scriptVersion"
+        android:text="脚本版本"
+        android:textColor="#272a29"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btn_lua_download"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:onClick="scriptDown"
+        android:text="脚本下载"
+        android:textColor="#272a29"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btn_sp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:onClick="spControl"
+        android:text="SP 控制"
+        android:textColor="#272a29"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btn_rm"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:onClick="rmControl"
+        android:text="RM 控制"
+        android:textColor="#272a29"
+        android:textSize="19sp" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/comm_title" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_below="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_et"
+            android:layout_margin="30dp"
+            android:hint="请输入你喜欢的名字"
+            android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_below="@+id/et_name"
+        android:layout_width="80dp"
+        android:text="确定"
+        android:onClick="onclick"
+        android:textColor="@color/colorYellow"
+        android:background="@drawable/btn_commit"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp" />
+
+
+</RelativeLayout>
